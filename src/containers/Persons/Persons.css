@@ -1,0 +1,97 @@
+.personsContainer{
+    font-size: 0.8rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.personsContainer > *{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.personsContainer table{
+    width: 100%;
+}
+
+.personsContainer table{
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.personsContainer table th,td{
+    border: 1px solid #a9a9a9;
+}
+
+.personsContainer table thead{
+    background-color: #a9a9a9;
+}
+
+.personsContainer table thead th{
+    padding: 10px;
+}
+
+.personsContainer table tr{
+    cursor: pointer;
+}
+
+.personsContainer table tr td {
+    padding: 5px 5px;
+}
+
+.personsContainer table thead th:hover{
+  background-color: cadetblue;
+  color: white;
+}
+
+.personsContainer table thead tr:hover,tr:nth-child(odd):hover{
+  background-color: #a9a9a9;
+}
+
+.personsContainer table tbody tr:nth-child(odd){
+    background-color: lightgrey;
+}
+
+.personsContainer table tbody tr:hover,tr:nth-child(odd):hover{
+  background-color: cadetblue;
+}
+
+.paginationContainer{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.paginationContainer div{
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.paginationContainer div:hover{
+    background-color: cadetblue;
+    color: white;
+}
+
+.paginationContainer .currentPage{
+    background-color: cadetblue;
+}
+
+@media(min-width: 700px){
+    .personsContainer{
+        flex-flow: row;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 1rem;
+    }
+
+    .personsContainer > *{
+        width: 40%;
+        margin: 0 25px;
+    }
+}

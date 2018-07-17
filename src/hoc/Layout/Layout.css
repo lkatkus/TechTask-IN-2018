@@ -1,0 +1,18 @@
+.layoutContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media(min-width: 700px){
+    .layoutContainer{
+        padding-top: 50px;    
+        flex-flow: row;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+    }
+}

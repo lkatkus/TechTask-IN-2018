@@ -1,0 +1,86 @@
+.personDetailsTitle{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.personDetailsTitle h3{
+    margin: 0 0 10px;
+}
+
+.personDetailsTitle div{
+    display: inline-block;
+    padding: 5px;
+    transition: 0.2s all;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.personDetailsTitle div:hover{
+    background-color: cadetblue;
+    color: white;
+}
+
+.personDetails:first-child{
+    margin-bottom: 20px;
+}
+
+.detailsForm{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.inputsContainer{
+    width: 100%;
+    padding: 10px;
+}
+
+.inputsContainer div{
+    margin-top: 10px;
+}
+
+.inputsContainer div:first-child{
+    margin-top: 0;
+}
+
+.inputsContainer div label{
+    display: inline-block;
+    width: 35%;
+}
+
+.inputsContainer div input{
+    width: 65%;
+    padding: 10px;
+}
+
+.btnContainer{
+    width: 100%;
+    padding: 10px;
+}
+
+.btnContainer input{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.btnContainer input:hover{
+    cursor: pointer;
+}
+
+@media(min-width: 700px){
+    .detailsForm{
+        flex-flow: row;
+    }
+
+    .inputsContainer{
+        width: 70%;
+        padding: 10px;
+    }
+
+    .btnContainer{
+        width: 30%;
+        padding: 10px;
+    }
+}
