@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "rimraf dist && webpack --mode=production --config webpack.prod.config.js --progress --profile --color"
   },
   "author": "",
   "license": "ISC",
