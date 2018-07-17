@@ -271,7 +271,7 @@ const getRelatives = (current, persons) => {
                 return person;
             }
         }
-    });
+    });    
     return personRelatives;
 };
 

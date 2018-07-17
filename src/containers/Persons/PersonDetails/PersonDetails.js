@@ -92,11 +92,10 @@ class PersonDetails extends Component{
     formSubmitHandler = (event) => {
         event.preventDefault();
 
-        let updatedPerson = {
-            name: event.target.name.value,
-            lastname: event.target.lastname.value,
-            birthday: event.target.birthday.value
-        };
+        let updatedPerson = {...this.props.currentPerson};
+        updatedPerson.name = event.target.name.value;
+        updatedPerson.lastname = event.target.lastname.value;
+        updatedPerson.birthday = event.target.birthday.value;
         
         let persons = this.props.persons.map((person) => {
             return {...person};
@@ -116,7 +115,6 @@ class PersonDetails extends Component{
         return today;
     }
 
-    
     // Methods
     setCurrentPerson = (person) => {
         this.props.addCurrentPerson(person);
